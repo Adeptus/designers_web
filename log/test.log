@@ -1,0 +1,715 @@
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.0ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.2ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.2ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.0ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 562946994) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'LOLOLO') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.0ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'LOLOLO') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 19:30:52) [GET]
+Rendering designer/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'LOLOLO') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 19:31:48) [GET]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering designer/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 21:23:50) [GET]
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 21:23:50) [GET]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 21:24:28) [GET]
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 21:24:28) [GET]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.0ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 21:25:11) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/designer/add]
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 21:25:11) [GET]
+  [4;36;1mDesigner Load (0.2ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 21:36:46) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 21:36:46) [GET]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 24ms (View: 24, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.0ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 21:37:17) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 21:37:17) [GET]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 25ms (View: 25, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 21:40:02) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/designer/add]
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 21:40:02) [GET]
+  [4;36;1mDesigner Load (0.2ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 23ms (View: 23, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:29:08) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:29:08) [POST]
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:29:08) [GET]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:41:38) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:41:38) [POST]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://test.host/designer/create]
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:41:38) [GET]
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:47:17) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/designer/add]
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:47:17) [POST]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://test.host/designer/create]
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:47:17) [GET]
+  [4;35;1mDesigner Load (0.2ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:48:45) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:48:45) [POST]
+  Parameters: {"designer"=>{}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 30ms (View: 9, DB: 0) | 200 OK [http://test.host/designer/create?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:48:45) [GET]
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:49:52) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:49:52) [POST]
+  Parameters: {"designer"=>{}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://test.host/designer/create?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:49:52) [GET]
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.0ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:51:23) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:51:23) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 20:51:23', '2011-07-05 20:51:23')[0m
+Redirected to http://test.host/designer
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designer/create?designer%5Bimage_url%5D=llalala&designer%5Bname%5D=bla&designer%5Bpresentation%5D=sadsdsa&designer%5Btel%5D=1111]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:51:23) [GET]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:51:33) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:51:33) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 20:51:33', '2011-07-05 20:51:33')[0m
+Redirected to http://test.host/designer
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designer/create?designer%5Bimage_url%5D=llalala&designer%5Bname%5D=bla&designer%5Bpresentation%5D=sadsdsa&designer%5Btel%5D=1111]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:51:33) [GET]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:52:44) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:52:44) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 20:52:44', '2011-07-05 20:52:44')[0m
+Redirected to http://test.host/designer
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designer/create?designer%5Bimage_url%5D=llalala&designer%5Bname%5D=bla&designer%5Bpresentation%5D=sadsdsa&designer%5Btel%5D=1111]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:52:44) [GET]
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:54:05) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:54:05) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 20:54:05', '2011-07-05 20:54:05')[0m
+Redirected to http://test.host/designer
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designer/create?designer%5Bimage_url%5D=llalala&designer%5Bname%5D=bla&designer%5Bpresentation%5D=sadsdsa&designer%5Btel%5D=1111]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+
+
+Processing DesignerController#destroy (for 0.0.0.0 at 2011-07-05 22:54:05) [POST]
+  Parameters: {"id"=>"805794608"}
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:54:05) [GET]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 23ms (View: 23, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:54:59) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:54:59) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 20:54:59', '2011-07-05 20:54:59')[0m
+Redirected to http://test.host/designer
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designer/create?designer%5Bimage_url%5D=llalala&designer%5Bname%5D=bla&designer%5Bpresentation%5D=sadsdsa&designer%5Btel%5D=1111]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+
+
+Processing DesignerController#destroy (for 0.0.0.0 at 2011-07-05 22:54:59) [POST]
+  Parameters: {"id"=>"805794608"}
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Destroy (0.1ms)[0m   [0mDELETE FROM "designers" WHERE "id" = 805794608[0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:54:59) [GET]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:55:28) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:55:28) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 20:55:28', '2011-07-05 20:55:28')[0m
+Redirected to http://test.host/designer
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designer/create?designer%5Bimage_url%5D=llalala&designer%5Bname%5D=bla&designer%5Bpresentation%5D=sadsdsa&designer%5Btel%5D=1111]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+
+
+Processing DesignerController#destroy (for 0.0.0.0 at 2011-07-05 22:55:28) [POST]
+  Parameters: {"id"=>"805794608"}
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Destroy (0.1ms)[0m   [0mDELETE FROM "designers" WHERE "id" = 805794608[0m
+Redirected to http://test.host/designer
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designer/destroy/805794608]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:55:28) [GET]
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:56:01) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:56:01) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 20:56:01', '2011-07-05 20:56:01')[0m
+Redirected to http://test.host/designer
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designer/create?designer%5Bimage_url%5D=llalala&designer%5Bname%5D=bla&designer%5Bpresentation%5D=sadsdsa&designer%5Btel%5D=1111]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+
+
+Processing DesignerController#destroy (for 0.0.0.0 at 2011-07-05 22:56:01) [POST]
+  Parameters: {"id"=>"805794608"}
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Destroy (0.1ms)[0m   [0mDELETE FROM "designers" WHERE "id" = 805794608[0m
+Redirected to http://test.host/designer
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designer/destroy/805794608]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:56:01) [GET]
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 23ms (View: 23, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.0ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:58:28) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:58:28) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 20:58:28', '2011-07-05 20:58:28')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+
+
+Processing DesignerController#destroy (for 0.0.0.0 at 2011-07-05 22:58:28) [POST]
+  Parameters: {"id"=>"805794608"}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;36;1mDesigner Destroy (0.1ms)[0m   [0;1mDELETE FROM "designers" WHERE "id" = 805794608[0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:58:28) [GET]
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 23ms (View: 23, DB: 1) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 22:58:57) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 22:58:57) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 20:58:57', '2011-07-05 20:58:57')[0m
+Redirected to http://test.host/designer
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designer/create?designer%5Bimage_url%5D=llalala&designer%5Bname%5D=bla&designer%5Bpresentation%5D=sadsdsa&designer%5Btel%5D=1111]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+
+
+Processing DesignerController#destroy (for 0.0.0.0 at 2011-07-05 22:58:57) [POST]
+  Parameters: {"id"=>"805794608"}
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Destroy (0.1ms)[0m   [0mDELETE FROM "designers" WHERE "id" = 805794608[0m
+Redirected to http://test.host/designer
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designer/destroy/805794608]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 22:58:57) [GET]
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 23:04:43) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 23:04:43) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 21:04:43', '2011-07-05 21:04:43')[0m
+Redirected to http://test.host/designer
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designer/create?designer%5Bimage_url%5D=llalala&designer%5Bname%5D=bla&designer%5Bpresentation%5D=sadsdsa&designer%5Btel%5D=1111]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+
+
+Processing DesignerController#destroy (for 0.0.0.0 at 2011-07-05 23:04:43) [POST]
+  Parameters: {"id"=>"805794608"}
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Destroy (0.1ms)[0m   [0mDELETE FROM "designers" WHERE "id" = 805794608[0m
+Redirected to http://test.host/designer
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designer/destroy/805794608]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 23:04:43) [GET]
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://test.host/designer]
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza') LIMIT 1[0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Czarnuch') LIMIT 1[0m
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'Koza2') LIMIT 1[0m
+
+
+Processing DesignerController#add (for 0.0.0.0 at 2011-07-05 23:09:24) [GET]
+Rendering template within layouts/aplication
+Rendering designer/add
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/designer/add]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#create (for 0.0.0.0 at 2011-07-05 23:09:24) [POST]
+  Parameters: {"designer"=>{"name"=>"bla", "tel"=>1111, "image_url"=>"llalala", "presentation"=>"sadsdsa"}}
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT "designers".id FROM "designers" WHERE ("designers"."name" = 'bla') LIMIT 1[0m
+  [4;36;1mDesigner Create (0.1ms)[0m   [0;1mINSERT INTO "designers" ("name", "tel", "image_url", "presentation", "created_at", "updated_at") VALUES('bla', 1111, 'llalala', 'sadsdsa', '2011-07-05 21:09:24', '2011-07-05 21:09:24')[0m
+Redirected to http://test.host/designer
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designer/create?designer%5Bimage_url%5D=llalala&designer%5Bname%5D=bla&designer%5Bpresentation%5D=sadsdsa&designer%5Btel%5D=1111]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+
+
+Processing DesignerController#destroy (for 0.0.0.0 at 2011-07-05 23:09:24) [POST]
+  Parameters: {"id"=>"805794608"}
+  [4;36;1mDesigner Load (0.1ms)[0m   [0;1mSELECT * FROM "designers" WHERE ("designers"."id" = 805794608) [0m
+  [4;35;1mDesigner Destroy (0.1ms)[0m   [0mDELETE FROM "designers" WHERE "id" = 805794608[0m
+Redirected to http://test.host/designer
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designer/destroy/805794608]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "designers" [0m
+
+
+Processing DesignerController#index (for 0.0.0.0 at 2011-07-05 23:09:24) [GET]
+  [4;35;1mDesigner Load (0.1ms)[0m   [0mSELECT * FROM "designers" [0m
+Rendering template within layouts/aplication
+Rendering designer/index
+Completed in 24ms (View: 24, DB: 0) | 200 OK [http://test.host/designer]

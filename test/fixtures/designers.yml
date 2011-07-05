@@ -1,0 +1,14 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+aaa:
+  name:         Czarnuch
+  tel:          12
+  image_url:    /images/nigga.jpg
+  presentation: Ello elo to ja zrobie Ci najlepszy Design w świecie
+
+bbb:
+  name:         Białas
+  tel:          13
+  image_url:    /images/bialas.jpg
+  presentation: Asfalt pierdzieli głupoty;)
+

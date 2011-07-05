@@ -1,0 +1,38 @@
+#banner {
+  background: grey ;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font: small-caps 26px/26px "Times New Roman", serif;
+  color: black ;
+  text-align: center;
+}
+
+#notice {
+  color: red;
+  text-align: center;
+}
+
+.designer_picture {
+  width: 75px;
+  float: left;
+}
+
+.designers table tr td {
+  padding: 15px;
+  vertical-align: top;
+}
+
+.form legend {
+  font: small-caps 24px/24px "Times New Roman";
+}
+
+.form label {
+  text-align: left;
+  font: small-caps 15px/15px "Times New Roman";
+  display: block;
+}
+
+.form .submit {
+  margin-left: 4em;
+}
+
