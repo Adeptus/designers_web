@@ -1,0 +1,27 @@
+<%= image_tag @designer.image_url %>
+<h3><%= @designer.name %></h3>
+<%= @designer.presentation %>
+     
+<% if @designer.id == session[:user_id] %>
+  <%= link_to "delete designer", :controller => "designer",
+                                  :action => 'destroy',
+                                  :id => @designer.id %>
+<% end %>
+
+<br>
+<br>
+<h1>Portfolio</h1>
+  
+<%= @designer.portfolio.text %>
+
+<br>
+<br>
+<h1>Projects:</h1>
+
+<% for project in @designer.portfolio.projects %>
+  <div id="project">
+    <h3><%= project.text %></h3>
+    <%= image_tag(project.image_url, :class => "project_picture") %><br>
+    <%= link_to "project", project.link %>
+  </div><br>
+<% end %>

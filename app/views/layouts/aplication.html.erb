@@ -10,8 +10,43 @@
     <h1 >Designers portfolio list</h1>
   </div>
 
-  <p id="notice"><%= flash[:notice] %></p>
 
-  <%= yield :layout %>
+  <div id="columns">
+    <div id="side">
+  <% if session[:user_id].nil? %>
+  
+    <div class="login">
+        <% form_tag :action => "login" do %>
+          <legend> Please Login</legends>
+
+            <div>
+             <label>Name:</label>
+             <%= text_field_tag :name, params[:name], :size => 15 %>
+            </div>
+            <div>
+              <label>"Password</label>
+              <%= password_field_tag :password, params[:password], :size => 15 %>
+            </div>
+        
+          <%= submit_tag "Login" %>
+      <% end %>
+      </div>
+
+  <% else %>
+
+      <div class="login">
+        <% form_remote_tag :url => {:controller => 'designer', :action => 'logout'} do %>
+          <%= submit_tag "Logout" %>
+        <% end %>
+      </div>
+
+  <% end %>
+    </div>
+
+    <div id="main">
+      <p id="notice"><%= flash[:notice] %></p>
+      <%= yield :layout %>
+    </div>
+</div>
 </body>
 </html>

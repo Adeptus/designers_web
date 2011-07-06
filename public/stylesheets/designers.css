@@ -17,6 +17,11 @@
   float: left;
 }
 
+.project_picture {
+  width: 675px;
+  float: center;
+}
+
 .designers table tr td {
   padding: 15px;
   vertical-align: top;
@@ -36,3 +41,35 @@
   margin-left: 4em;
 }
 
+.login div {
+  margin: 0.5em 0;
+}
+
+.login label {
+  text-align: left;
+  font: small-caps 15px/15px "Times New Roman";
+  display: block;
+}
+
+#main {
+  margin-left: 13em;
+  padding-top: 4ex;
+  padding-left: 2em;
+  background: white;
+  text-align: center;
+  margin-right: 15em;
+}
+
+#side {
+  border: 3px solid;
+  margin-top: 1em;
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 12em;
+  background: grey;
+}
+#portfolio {
+  float: center;
+}

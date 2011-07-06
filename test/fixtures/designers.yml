@@ -1,13 +1,17 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 aaa:
+  id:           1
   name:         Czarnuch
+  password:     elo
   tel:          12
   image_url:    /images/nigga.jpg
   presentation: Ello elo to ja zrobie Ci najlepszy Design w świecie
 
 bbb:
+  id:           2
   name:         Białas
+  password:     cze
   tel:          13
   image_url:    /images/bialas.jpg
   presentation: Asfalt pierdzieli głupoty;)

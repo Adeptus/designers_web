@@ -3,7 +3,7 @@
     <th></th>
     <th>Imie</th>
     <th>Opis</th>
-    <th>Opcje</th>
+    <th></th>
   <% for designer in @designers %>
     <tr>
       <% form_remote_tag :url => { :controller => "portfolio", :action => 'index', :id => designer} do %>
@@ -13,14 +13,19 @@
 
       <td><%= designer.presentation %></td>
       
-      <td>
-        <%= link_to "delete designer", :action => 'destroy', :id => designer.id %>
-      </td>
+      <% if designer.id == session[:user_id] %>
+        <td>
+          <%= link_to "delete designer", :action => 'destroy', :id => designer.id %>
+        </td>
+      <% end %>
     </tr>
   <% end %>
-  <table>
-  <% form_remote_tag :url => { :action => 'add'} do %>
-    <%= submit_tag "Create new designer" %>
+  </table>
+
+  <% if session[:user_id].nil? %>
+    <% form_remote_tag :url => { :action => 'add'} do %>
+      <%= submit_tag "Create new designer" %>
+    <% end %>
   <% end %>
 
 </div>

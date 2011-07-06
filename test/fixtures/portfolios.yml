@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id:          1
+  designer_id: 1
+  text: See my project below!
+
+two:
+  id:          2
+  designer_id: 2
+  text: portfolio soon

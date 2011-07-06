@@ -2,6 +2,7 @@ class CreateDesigners < ActiveRecord::Migration
   def self.up
     create_table :designers do |t|
       t.string :name
+      t.string :password
       t.integer :tel
       t.string :image_url
       t.text :presentation
