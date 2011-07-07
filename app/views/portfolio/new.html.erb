@@ -1,0 +1,18 @@
+<div class="form">
+
+  <%= error_messages_for 'portfolio' %>
+
+  <% form_for :portfolio, :url => { :action => "create" } do |form| %>
+      <legend> Please Enter Your Data</legends>
+
+      <div>
+        <%= form.label "Presentation text:" %>
+        <%= form.text_area :text %>
+      </div>
+    
+      <%= submit_tag "Create portfolio" %>
+  <% end %>
+</div>
+
+<br>
+<%= link_to 'Back', :action => "index" %>

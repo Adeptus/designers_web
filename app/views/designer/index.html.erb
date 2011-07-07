@@ -23,7 +23,7 @@
   </table>
 
   <% if session[:user_id].nil? %>
-    <% form_remote_tag :url => { :action => 'add'} do %>
+    <% form_remote_tag :url => { :action => 'new'} do %>
       <%= submit_tag "Create new designer" %>
     <% end %>
   <% end %>

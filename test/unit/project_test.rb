@@ -12,9 +12,4 @@ class ProjectTest < ActiveSupport::TestCase
     project =  Project.new(:portfolio_id => 11)
     assert project.valid?
   end
-
-  def test_with_wrong_athribute
-    project =  Project.new(:portfolio_id => "a")
-    assert !project.valid?
-  end
 end

@@ -4,7 +4,7 @@ class DesignerController < ApplicationController
     @designers = Designer.find(:all)
   end
 
-  def add
+  def new
     @designer = Designer.new
   end
 
@@ -14,33 +14,22 @@ class DesignerController < ApplicationController
     if @designer.save
       redirect_to_index("aded new designer")
     else
-      render :action => "add"
+      render :action => "new"
     end
+  end
+
+  def edit
+
+  end
+
+  def update
+
   end
 
   def destroy
-    @designer = Designer.find(params[:id])
-    @designer.destroy
+    Designer.find(params[:id]).destroy
+    session[:user_id] = nil
     redirect_to_index("delete designer")
-  end
-
-  def login
-    if request.post?
-      user = Designer.authorize(params[:name], params[:password])
-      if user
-        session[:user_id] = user.id
-        redirect_to_index("Hello #{user.name}")        
-      else
-        redirect_to_index("Bad password/user")        
-      end
-    end
-  end
-
-  def logout
-    if request.post?
-      session[:user_id] = nil
-      redirect_to_index("Logout")
-    end
   end
 
 private

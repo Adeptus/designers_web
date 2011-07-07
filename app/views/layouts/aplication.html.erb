@@ -4,6 +4,7 @@
 <head>
   <title>Designers portfolio list</title>
   <%= stylesheet_link_tag "designers" %>
+  <%= javascript_include_tag :defaults %>
 </head>
 <body>
   <div id="banner">
@@ -35,7 +36,7 @@
   <% else %>
 
       <div class="login">
-        <% form_remote_tag :url => {:controller => 'designer', :action => 'logout'} do %>
+        <% form_remote_tag :url => {:action => 'logout'} do %>
           <%= submit_tag "Logout" %>
         <% end %>
       </div>
