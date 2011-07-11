@@ -6,7 +6,7 @@
     <th></th>
   <% for designer in @designers %>
     <tr>
-      <% form_remote_tag :url => { :controller => "portfolio", :action => 'index', :id => designer} do %>
+      <% form_tag :controller => "portfolio" do %>
         <td><%= image_submit_tag(designer.image_url, :class => "designer_picture") %></td>
         <td><%= submit_tag designer.name %></td>
       <% end %>
@@ -23,7 +23,7 @@
   </table>
 
   <% if session[:user_id].nil? %>
-    <% form_remote_tag :url => { :action => 'new'} do %>
+    <% form_tag :action => 'new' do %>
       <%= submit_tag "Create new designer" %>
     <% end %>
   <% end %>

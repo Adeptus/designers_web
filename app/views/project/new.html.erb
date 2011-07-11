@@ -1,0 +1,25 @@
+<div class="form">
+
+  <%= error_messages_for 'project' %>
+
+  <% form_tag :action => "create" do %>
+      <legend> Please Enter Your Data</legends>
+
+      <div>
+        <label>"Text:"</label>
+        <%= text_field_tag :text, params[:text] %>
+      </div>
+      <div>
+        <label>Link:</label>
+        <%= text_field_tag :link, params[:link] %>
+      </div>
+      <div>
+        <label>image_url:</label>
+        <%= text_field_tag :image_url, params[:image_url] %>
+      </div>
+    
+      <%= submit_tag "Create project" %>
+  <% end %>
+</div>
+
+<%= link_to 'Back', :controller => "portfolio", :action => "index" %>

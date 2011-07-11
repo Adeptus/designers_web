@@ -1,8 +1,8 @@
 class PortfolioController < ApplicationController
-  before_filter :authorization, :except => "index"
+  before_filter :authorization, :except => [:index, :login]
 
   def index
-    @designer  = Designer.find(params[:id] || session[:user_id])
+    @designers  = Designer.find(:all)
   rescue ActiveRecord::RecordNotFound
     flash[:notice] = "Select correct designer"
     redirect_to(:controller => "designer")
@@ -16,10 +16,10 @@ class PortfolioController < ApplicationController
   end
 
   def create
-    @portfolio = Portfolio.new(:designer_id => session[:user_id],
-                               :text        => params[:portfolio])
+    portfolio = Portfolio.new(:designer_id => session[:user_id],
+                              :text        => params[:portfolio])
 
-    if @portfolio.save
+    if portfolio.save
       redirect_to_index("portfolio creaded")
     else
       render :action => "new"

@@ -13,10 +13,10 @@ class ApplicationController < ActionController::Base
       if user
         session[:user_id] = user.id
         flash[:notice] = "Hello #{user.name}"
-        redirect_to request.referer
+        redirect_to request.referer ? :back : "/designer"
       else
         flash[:notice] = "Bad password/user"
-        redirect_to request.referer
+        redirect_to request.referer ? :back : "/designer"
       end
     end
   end
@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
     if request.post?
       session[:user_id] = nil
       flash[:notice] = "Logout"
-      redirect_to request.referer
+      redirect_to(:controller => "designer", :action => "index")
     end
   end
 
