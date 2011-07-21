@@ -1,5 +1,6 @@
 class Designer < ActiveRecord::Base
-  has_one :portfolio
+  has_one  :portfolio
+  has_many :comments
   validates_presence_of     :name, :password, :tel, :image_url, :presentation
   validates_numericality_of :tel
   validates_uniqueness_of   :name, :message => "designer already exist"

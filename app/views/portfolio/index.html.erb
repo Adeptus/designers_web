@@ -26,5 +26,26 @@
       <%= link_to "project", project.link %>
     </div><br>
   <% end %>
+
+  <p>Portfolio comments: <%= designer.portfolio.comments.count%></p>
+
+  <% unless designer.portfolio.comments.nil? %>
+    <table>
+    <%= render(:partial => "comment", :collection => designer.portfolio.comments) %>
+    </table>
+  <% end %>
+
+  <% if session[:user_id] %>
+     <% form_tag :controller => "comment", :action => "create" do %>
+      <legend>Add comment</legends>
+
+       <%= text_field_tag   :text, params[:text] %>
+       <%= hidden_field_tag :attachable_id, params[:attachable_id] = designer.portfolio.id %>
+       <%= hidden_field_tag :attachable_type, params[:attachable_type] = "Portfolio" %>
+
+    <%= submit_tag "Comment" %>
+    <% end %>
+  <% end %>
+  <br>
 <p>*******************************************************************************</p><br>
 <% end %>

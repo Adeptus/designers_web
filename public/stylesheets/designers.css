@@ -73,3 +73,8 @@
 #portfolio {
   float: center;
 }
+
+.picture_comment {
+  width: 100px;
+  float: center;
+}

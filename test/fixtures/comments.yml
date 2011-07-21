@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id:              1
+  text:            Dobre portfolio
+  designer_id:     2
+  attachable_id:   1
+  attachable_type: Portfolio
+
+two:
+  id:              2
+  text:            Gdzie portfolio
+  designer_id:     1
+  attachable_id:   2
+  attachable_type: Portfolio
+
