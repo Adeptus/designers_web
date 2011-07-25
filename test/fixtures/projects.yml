@@ -1,6 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
+  id: 1
   portfolio_id: 1
   text: Editor Vim
   link: http://www.vim.org/

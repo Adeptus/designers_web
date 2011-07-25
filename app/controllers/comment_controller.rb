@@ -14,4 +14,11 @@ class CommentController < ApplicationController
     end
   end
 
+
+  def destroy
+    Comment.find(params[:id]).destroy
+    redirect_to :back
+  end
+
+
 end

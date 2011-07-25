@@ -18,6 +18,11 @@
 }
 
 .project_picture {
+  width: 475px;
+  float: center;
+}
+
+.project_picture:hover {
   width: 675px;
   float: center;
 }
@@ -75,6 +80,18 @@
 }
 
 .picture_comment {
-  width: 100px;
-  float: center;
+  width: 60px;
 }
+
+.comment_table {
+  margin-left: 110px;
+}
+.comment_table_text_tr {
+  width: 615px;
+  display: block;
+}
+
+.comment_table tr td {
+  border: 1px solid black;
+}
+

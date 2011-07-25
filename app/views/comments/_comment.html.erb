@@ -1,0 +1,16 @@
+<tr>
+  <td>
+    <%= image_tag comment.designer.image_url, :class => "picture_comment" %>
+  </td>
+  <td class="comment_table_text_tr">
+    <b><%= comment.designer.name %></b>
+    <p><%= comment.text %></p>
+    
+    <% if comment.designer.id == session[:user_id] %>
+      <%= link_to "delete comment", :controller => "comment",
+                                    :action => 'destroy',
+                                    :id => comment.id %>     
+    <% end %>
+
+  </td>
+</tr>

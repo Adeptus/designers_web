@@ -1,0 +1,17 @@
+<h3><%= project.text %></h3>
+
+  <%= image_tag(project.image_url, :class => "project_picture") %><br>
+  <%= link_to "project", project.link %><br><br>
+
+  <table class="comment_table">
+    <%= render(:partial => "/comments/comment",
+               :collection => project.comments) %>
+  </table><br>
+
+  <% if session[:user_id] %>
+    <%= render(:partial => "/comments/add_comment/",
+               :locals => {:id   => project.id,
+                           :type => "Project"}) %>
+  <% end %>
+
+<br>

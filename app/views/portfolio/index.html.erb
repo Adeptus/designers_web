@@ -15,37 +15,24 @@
     
   <%= designer.portfolio.text %>
 
+  <p>Portfolio comments: <%= designer.portfolio.comments.count%></p>
+
+  <table class="comment_table">
+  <%= render(:partial => "/comments/comment",
+             :collection => designer.portfolio.comments) %>
+  </table>
+
+  <% if session[:user_id] %>
+    <%= render(:partial => "/comments/add_comment/",
+               :locals => {:id   => designer.portfolio.id,
+                           :type => "Portfolio"}) %>
+  <% end %>
+
   <br>
   <br>
   <h1>Projects:</h1>
-
-  <% for project in designer.portfolio.projects %>
-    <div id="project">
-      <h3><%= project.text %></h3>
-      <%= image_tag(project.image_url, :class => "project_picture") %><br>
-      <%= link_to "project", project.link %>
-    </div><br>
-  <% end %>
-
-  <p>Portfolio comments: <%= designer.portfolio.comments.count%></p>
-
-  <% unless designer.portfolio.comments.nil? %>
-    <table>
-    <%= render(:partial => "comment", :collection => designer.portfolio.comments) %>
-    </table>
-  <% end %>
-
-  <% if session[:user_id] %>
-     <% form_tag :controller => "comment", :action => "create" do %>
-      <legend>Add comment</legends>
-
-       <%= text_field_tag   :text, params[:text] %>
-       <%= hidden_field_tag :attachable_id, params[:attachable_id] = designer.portfolio.id %>
-       <%= hidden_field_tag :attachable_type, params[:attachable_type] = "Portfolio" %>
-
-    <%= submit_tag "Comment" %>
-    <% end %>
-  <% end %>
+    <%= render(:partial => "/project/project/",
+               :collection => designer.portfolio.projects) %>
   <br>
 <p>*******************************************************************************</p><br>
 <% end %>

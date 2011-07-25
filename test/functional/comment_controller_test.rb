@@ -11,4 +11,11 @@ class CommentControllerTest < ActionController::TestCase
     end
   end
 
+
+  def test_destroy_action
+    assert_difference('Comment.count') do
+      post :destroy, {:id => 1}
+    end
+  end
+
 end
