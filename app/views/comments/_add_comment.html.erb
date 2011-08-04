@@ -1,9 +1,0 @@
-<% form_tag :controller => "comment", :action => "create" do %>
-  <legend>Add comment</legends>
-
-   <%= text_field_tag   :text, params[:text] %>
-   <%= hidden_field_tag :attachable_id, params[:attachable_id] = id %>
-   <%= hidden_field_tag :attachable_type, params[:attachable_type] = type %>
-
-<%= submit_tag "Comment" %>
-<% end %>

@@ -1,4 +1,4 @@
-<tr>
+<tr id="comment_tr_#{comment.id}">
   <td>
     <%= image_tag comment.designer.image_url, :class => "picture_comment" %>
   </td>
@@ -7,9 +7,9 @@
     <p><%= comment.text %></p>
     
     <% if comment.designer.id == session[:user_id] %>
-      <%= link_to "delete comment", :controller => "comment",
-                                    :action => 'destroy',
-                                    :id => comment.id %>     
+      <%= link_to_remote "delete comment", :url => {:controller => "comment",
+                                                    :action => 'destroy',
+                                                    :id => comment.id } %>     
     <% end %>
 
   </td>

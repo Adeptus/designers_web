@@ -1,0 +1,3 @@
+page.replace_html :comments_count, pluralize(@comment.attachable.comments.size, 'Comment')
+page.insert_html :bottom, :comment_table, :partial => "comment", :object => @comment 
+page['add_comment'].reset

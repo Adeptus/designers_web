@@ -1,8 +1,8 @@
 class PortfolioController < ApplicationController
-  before_filter :authorization, :except => [:index, :login]
+  before_filter :authorization, :except => [:index, :show, :login]
 
   def index
-    @designers  = Designer.find(:all)
+    @portfolios  = Portfolio.find(:all)
   rescue ActiveRecord::RecordNotFound
     flash[:notice] = "Select correct designer"
     redirect_to(:controller => "designer")
@@ -26,6 +26,10 @@ class PortfolioController < ApplicationController
     end
   end
 
+  def show
+    @portfolio  = Portfolio.find(params[:id])
+  end
+
 private
 
   def redirect_to_index(message = nil)
@@ -33,10 +37,4 @@ private
     redirect_to :action => 'index'
   end
 
-  def authorization
-    if session[:user_id].nil?
-      flash[:notice] = "You have to been logged"
-      redirect_to(:controller => "designer")
-    end
-  end
 end

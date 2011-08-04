@@ -29,5 +29,13 @@ class ApplicationController < ActionController::Base
     end
   end
 
+protected
+
+  def authorization
+    if session[:user_id].nil?
+      flash[:notice] = "You have to been logged"
+      redirect_to(:controller => "designer")
+    end
+  end
 
 end

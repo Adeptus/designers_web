@@ -1,0 +1,2 @@
+page.replace_html :comments_count, pluralize(@comment.attachable.comments.size, 'Comment')
+page.replace_html :comment_table, :partial => 'comment', :collection => @comment.attachable.comments

@@ -1,0 +1,36 @@
+<%= image_tag @portfolio.designer.image_url %>
+<h3><%= @portfolio.designer.name %></h3>
+<%= @portfolio.designer.presentation %>
+     
+<% if @portfolio.designer.id == session[:user_id] %>
+  <%= link_to "delete designer", :controller => "designer",
+                                 :action => 'destroy',
+                                 :id => @portfolio.designer.id %>
+<% end %>
+
+<br>
+<br>
+
+<h1>portfolio</h1>
+  
+<%= @portfolio.text %>
+
+<p id="comments_count"><%= pluralize(@portfolio.comments.size, "comment")%></p>
+
+<table id="comment_table">
+<%= render(:partial => "/comment/comment",
+           :collection => @portfolio.comments) %>
+</table>
+
+<% if session[:user_id] %>
+  <%= render(:partial => "/comment/add_comment/",
+             :locals => {:id   => @portfolio.id,
+                         :type => "Portfolio"}) %>
+<% end %>
+
+<br>
+<br>
+<h1>Projects:</h1>
+  <%= render(:partial => "/project/project/",
+             :collection => @portfolio.projects) %>
+<br>

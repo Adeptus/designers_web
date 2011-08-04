@@ -83,7 +83,7 @@
   width: 60px;
 }
 
-.comment_table {
+#comment_table {
   margin-left: 110px;
 }
 .comment_table_text_tr {
@@ -91,7 +91,7 @@
   display: block;
 }
 
-.comment_table tr td {
+#comment_table tr td {
   border: 1px solid black;
 }
 

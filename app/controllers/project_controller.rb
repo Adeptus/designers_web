@@ -1,7 +1,12 @@
 class ProjectController < ApplicationController
+  before_filter :authorization, :except => [:show, :login]
 
   def new
     @project = Project.new
+  end
+
+  def show
+    @project = Project.find(params[:id])
   end
 
   def create

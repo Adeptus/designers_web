@@ -1,38 +1,29 @@
-<% for designer in @designers %>
-  <%= image_tag designer.image_url %>
-  <h3><%= designer.name %></h3>
-  <%= designer.presentation %>
+<% for portfolio in @portfolios %>
+  <%= image_tag portfolio.designer.image_url %>
+  <h3><%= portfolio.designer.name %></h3>
+  <%= portfolio.designer.presentation %>
        
-  <% if designer.id == session[:user_id] %>
+  <% if portfolio.designer.id == session[:user_id] %>
     <%= link_to "delete designer", :controller => "designer",
-                                    :action => 'destroy',
-                                    :id => designer.id %>
+                                   :action => 'destroy',
+                                   :id => portfolio.designer.id %>
   <% end %>
 
   <br>
   <br>
-  <h1>Portfolio</h1>
+
+  <%= link_to "<h1>Portfolio</h1>", :action => "show",
+                                   :id     => portfolio.id %>
     
-  <%= designer.portfolio.text %>
+  <%= portfolio.text %>
 
-  <p>Portfolio comments: <%= designer.portfolio.comments.count%></p>
-
-  <table class="comment_table">
-  <%= render(:partial => "/comments/comment",
-             :collection => designer.portfolio.comments) %>
-  </table>
-
-  <% if session[:user_id] %>
-    <%= render(:partial => "/comments/add_comment/",
-               :locals => {:id   => designer.portfolio.id,
-                           :type => "Portfolio"}) %>
-  <% end %>
+  <p id="comments_count"><%= pluralize(portfolio.comments.size, "comment")%></p>
 
   <br>
   <br>
   <h1>Projects:</h1>
     <%= render(:partial => "/project/project/",
-               :collection => designer.portfolio.projects) %>
+               :collection => portfolio.projects) %>
   <br>
 <p>*******************************************************************************</p><br>
 <% end %>
