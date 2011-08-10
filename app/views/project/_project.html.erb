@@ -4,7 +4,8 @@
                               :controller => "project",
                               :action => "show",
                               :id => project.id %><br><br>
-  <%= link_to "link to project page", project.link %><br><br>
+  <%= link_to "link to project page", project.link %><br>
+  <p> Average routing is <b><%= project.average_rating %></b></p>
   <p id="comments_count"><%= pluralize(project.comments.size, "comment")%></p>
 
 <br>

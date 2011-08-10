@@ -1,0 +1,3 @@
+page.replace_html :ratings_average, pluralize(@project.average_rating, "star")
+page.replace_html :ratings_form, :partial => "/ratings/ratings",
+                                 :object => @project
