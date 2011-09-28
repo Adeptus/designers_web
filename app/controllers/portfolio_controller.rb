@@ -3,14 +3,11 @@ class PortfolioController < ApplicationController
 
   def index
     @portfolios  = Portfolio.find(:all)
-  rescue ActiveRecord::RecordNotFound
-    flash[:notice] = "Select correct designer"
-    redirect_to(:controller => "designer")
   end
 
   def new
     @portfolio = Portfolio.new
-    if !Designer.find(session[:user_id]).portfolio.nil?
+    unless Designer.find(session[:user_id]).portfolio.nil?
       redirect_to_index("you have portfolio")
     end
   end
@@ -28,6 +25,8 @@ class PortfolioController < ApplicationController
 
   def show
     @portfolio  = Portfolio.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    redirect_to_index("Portfolio don't exist")
   end
 
 private

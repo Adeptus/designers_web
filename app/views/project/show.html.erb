@@ -2,7 +2,9 @@
 
   <%= image_tag(@project.image_url, :class => "project_picture") %><br>
   <%= link_to "project", @project.link %><br>
-  <p> Average routing is <b id="ratings_average"><%= pluralize(@project.average_rating, "star") %></b></p>
+  <p> Average routing is <b id="ratings_average">
+    <%= pluralize(@project.average_rating, "star") %>
+  </b></p>
 
 
     <% if session[:user_id] %>

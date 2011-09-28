@@ -1,25 +1,14 @@
 <div class="designers">
   <table>
+    <th><%= sortable "score" %></th>
     <th></th>
-    <th>Imie</th>
+    <th><%= sortable "name" %></th>
     <th>Opis</th>
     <th></th>
-  <% for designer in @designers %>
-    <tr>
-      <% form_tag :controller => "portfolio" do %>
-        <td><%= image_submit_tag(designer.image_url, :class => "designer_picture") %></td>
-        <td><%= submit_tag designer.name %></td>
-      <% end %>
 
-      <td><%= designer.presentation %></td>
-      
-      <% if designer.id == session[:user_id] %>
-        <td>
-          <%= link_to "delete designer", :action => 'destroy', :id => designer.id %>
-        </td>
-      <% end %>
-    </tr>
-  <% end %>
+    <%= render(:partial => "/designer/designer/",
+      :collection => @designers) %>  
+
   </table>
 
   <% if session[:user_id].nil? %>

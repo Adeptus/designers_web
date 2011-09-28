@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110810185615) do
+ActiveRecord::Schema.define(:version => 20110928170102) do
 
   create_table "comments", :force => true do |t|
     t.string   "text"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20110810185615) do
     t.text     "presentation"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "score"
   end
 
   create_table "portfolios", :force => true do |t|

@@ -1,5 +1,9 @@
 class ProjectController < ApplicationController
-  before_filter :authorization, :except => [:show, :login]
+  before_filter :authorization, :except => [:index, :show, :login]
+
+  def index
+    @projects = Project.find(:all)
+  end
 
   def new
     @project = Project.new
@@ -7,6 +11,8 @@ class ProjectController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    redirect_to :action => 'index'
   end
 
   def create

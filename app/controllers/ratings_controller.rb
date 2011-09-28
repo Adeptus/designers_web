@@ -1,5 +1,6 @@
 class RatingsController < ApplicationController
   before_filter :get_project
+  after_filter  :update_designer_score
 
   def create
     @rating = Rating.new(params[:rating])
@@ -33,4 +34,7 @@ private
     @project = Project.find(params[:project_id])
   end
 
+  def update_designer_score
+    Designer.find(@project.portfolio.designer_id).update_score
+  end
 end

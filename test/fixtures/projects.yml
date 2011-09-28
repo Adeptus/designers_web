@@ -8,6 +8,7 @@ one:
   image_url: /images/vim.jpg
 
 two:
+  id: 2
   portfolio_id: 1
   text: Kowalstwo Artystyczne
   link: http://www.kowal.pl/

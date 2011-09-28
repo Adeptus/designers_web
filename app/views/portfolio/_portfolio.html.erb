@@ -1,0 +1,24 @@
+<%= image_tag portfolio.designer.image_url %>
+<h3><%= portfolio.designer.name %></h3>
+<%= portfolio.designer.presentation %>
+     
+<% if portfolio.designer.id == session[:user_id] %>
+  <%= link_to "delete designer", :controller => "designer",
+                                 :action => 'destroy',
+                                 :id => portfolio.designer.id %>
+<% end %>
+
+<br>
+<br>
+
+<%= link_to "<h1>Portfolio</h1>", :action => "show",
+                                    :id     => portfolio.id %>
+  
+<%= portfolio.text %>
+
+<p id="comments_count"><%= pluralize(portfolio.comments.size, "comment")%></p>
+
+<h3>Projects: <%= pluralize(portfolio.projects.size, "project")%></h3>
+<br>
+*************************************************************************
+<br>

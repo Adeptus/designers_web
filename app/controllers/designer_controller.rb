@@ -1,7 +1,8 @@
 class DesignerController < ApplicationController
-
+  helper_method :sort_column, :sort_direction
+  
   def index
-    @designers = Designer.find(:all)
+    @designers = Designer.find(:all, :order => sort_column + " " + sort_direction)
   end
 
   def new
@@ -38,4 +39,15 @@ private
     flash[:notice] = message
     redirect_to :action => 'index'
   end
+
+  private
+  
+  def sort_column
+    Designer.column_names.include?(params[:sort]) ? params[:sort] : "name"
+  end
+  
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+  end
+
 end

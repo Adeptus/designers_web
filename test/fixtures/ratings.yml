@@ -3,9 +3,14 @@
 one:
   designer_id: 1
   project_id: 1
-  value: 1
+  value: 2
 
 two:
-  designer_id: 1
+  designer_id: 2
   project_id: 1
-  value: 1
+  value: 4
+
+three:
+  designer_id: 2
+  project_id: 1
+  value: 3

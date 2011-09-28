@@ -7,6 +7,7 @@ aaa:
   tel:          12
   image_url:    /images/nigga.jpg
   presentation: Ello elo to ja zrobie Ci najlepszy Design w świecie
+  score:        1.2
 
 bbb:
   id:           2
@@ -15,4 +16,5 @@ bbb:
   tel:          13
   image_url:    /images/bialas.jpg
   presentation: Asfalt pierdzieli głupoty;)
+  score:        1
 
