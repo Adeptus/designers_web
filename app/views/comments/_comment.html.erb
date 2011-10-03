@@ -7,9 +7,8 @@
     <p><%= comment.text %></p>
     
     <% if comment.designer.id == session[:user_id] %>
-      <%= link_to_remote "delete comment", :url => {:controller => "comment",
-                                                    :action => 'destroy',
-                                                    :id => comment.id } %>     
+      <%= link_to_remote "delete comment", :url => comment_path(comment),
+                                           :method => :delete %>     
     <% end %>
 
   </td>

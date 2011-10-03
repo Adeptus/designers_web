@@ -1,4 +1,4 @@
-class CommentController < ApplicationController
+class CommentsController < ApplicationController
   before_filter :authorization
 
   def create
@@ -20,6 +20,4 @@ class CommentController < ApplicationController
       format.js
     end
   end
-
-
 end

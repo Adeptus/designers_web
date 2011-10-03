@@ -18,12 +18,12 @@
   <p id="comments_count"><%= pluralize(@project.comments.size, "comment")%></p>
 
   <table id="comment_table">
-    <%= render(:partial => "/comment/comment",
+    <%= render(:partial => "/comments/comment",
                :collection => @project.comments) %>
   </table><br>
 
   <% if session[:user_id] %>
-    <%= render(:partial => "/comment/add_comment/",
+    <%= render(:partial => "/comments/add_comment/",
                :locals => {:id   => @project.id,
                            :type => "Project"}) %>
   <% end %>

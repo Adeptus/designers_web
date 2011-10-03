@@ -1,0 +1,21 @@
+<tr>
+  <td>
+    <%= designer.score %>
+  </td>
+
+  <td>
+    <%= link_to image_tag(designer.image_url, :class => "designer_picture"), portfolio_path(designer) %>
+  </td>
+  <td>
+    <%= link_to designer.name, portfolio_path(designer) %>
+  </td>
+  <td>
+    <%= designer.presentation %>
+  </td>
+ 
+  <% if designer.id == session[:user_id] %>
+    <td>
+      <%= link_to "delete designer", designer_path(designer), :method => :delete %>
+    </td>
+  <% end %>
+</tr>

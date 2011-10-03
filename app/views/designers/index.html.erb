@@ -1,0 +1,12 @@
+<div id="designers">
+  <table id="designers_table">
+    <%= render(:partial => "/designers/designers_table") %>
+  </table>
+
+  <% if session[:user_id].nil? %>
+    <% form_tag new_designer_path do %>
+      <%= submit_tag "Create new designer" %>
+    <% end %>
+  <% end %>
+
+</div>

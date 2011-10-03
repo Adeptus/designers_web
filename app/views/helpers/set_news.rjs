@@ -1,0 +1,4 @@
+page.replace_html :news_colection, ""
+page.insert_html :bottom, :news_2 , '<ul class="news_colection"></ul>'
+page.insert_html :bottom, :news_colection, :partial => "helpers/latest_news",
+                                           :collection => session[:news]

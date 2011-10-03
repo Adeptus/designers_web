@@ -1,0 +1,15 @@
+<% if object.created_at.to_date == Date.today.to_date %>
+  <li class="today">
+<% else %>
+  <li>
+<% end %>
+
+  <% if object.class.to_s == "Project" %>
+    <%= link_to object.text, project_path(object) %>
+
+  <% else %>
+    <%= link_to object.name, designer_path(object) %>
+    <%= pluralize(object.score, "star")%>
+  <% end %>
+
+</li>

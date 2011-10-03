@@ -1,5 +1,5 @@
-class ProjectController < ApplicationController
-  before_filter :authorization, :except => [:index, :show, :login]
+class ProjectsController < ApplicationController
+  before_filter :authorization, :except => [:index, :show, :login, :set_news]
 
   def index
     @projects = Project.find(:all)
@@ -23,7 +23,7 @@ class ProjectController < ApplicationController
 
     if project.save
       flash[:notice] = "project add"
-      redirect_to :controller => "portfolio"
+      redirect_to project_path(project)
     else
       render :action => "new"
     end

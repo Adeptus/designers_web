@@ -48,6 +48,26 @@
       <p id="notice"><%= flash[:notice] %></p>
       <%= yield :layout %>
     </div>
+    <div id="side_right">
+        <% form_remote_for :set_news, :url  => {:action => "set_news"},
+                               :html => {:id     => "news_1"}   do |f| %>
+           <label>Select News:</label>
+           <%= f.hidden_field :news, :value => "projects" %>
+           <%= submit_tag "Projects" %>
+        <% end %>
+
+        <% form_remote_for :set_news, :url  => {:action => "set_news"},
+                               :html => {:id     => "news_2"}   do |f| %>
+           <%= f.hidden_field :news, :value => "designers" %>
+           <%= submit_tag "Designers" %>
+        <% end %>
+
+      <ul id="news_colection">
+        <%= render(:partial => "/helpers/latest_news/",
+                   :collection => session[:news]) %>
+      </ul>
+    </div>
+    
 </div>
 </body>
 </html>

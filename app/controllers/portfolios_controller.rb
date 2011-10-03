@@ -1,5 +1,5 @@
-class PortfolioController < ApplicationController
-  before_filter :authorization, :except => [:index, :show, :login]
+class PortfoliosController < ApplicationController
+  before_filter :authorization, :except => [:index, :show, :login, :set_news]
 
   def index
     @portfolios  = Portfolio.find(:all)

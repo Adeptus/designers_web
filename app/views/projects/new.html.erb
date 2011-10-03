@@ -2,7 +2,7 @@
 
   <%= error_messages_for 'project' %>
 
-  <% form_tag :action => "create" do %>
+  <% form_tag projects_path do %>
       <legend> Please Enter Your Data</legends>
 
       <div>
@@ -22,4 +22,4 @@
   <% end %>
 </div>
 
-<%= link_to 'Back', :controller => "portfolio", :action => "index" %>
+<%= link_to 'Back', :back %>

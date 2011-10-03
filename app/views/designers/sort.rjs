@@ -1,0 +1,4 @@
+page.replace_html "designers_table", ""
+page.insert_html :bottom, "designers" , '<table id="designers_table"></table>'
+page.insert_html :bottom, "designers_table", :partial => "designers_table",
+                                             :object => @designers
