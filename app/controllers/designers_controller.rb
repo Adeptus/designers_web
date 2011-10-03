@@ -10,6 +10,10 @@ class DesignersController < ApplicationController
     render 'designers/sort' 
   end
 
+  def show
+    @designer = Designer.find(params[:id])
+  end
+
   def new
     @designer = Designer.new
   end
