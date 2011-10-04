@@ -1,0 +1,21 @@
+<% form_tag projects_path, :method => 'get' do %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search project", :name => nil %>
+<% end %>
+
+<% unless @projects.empty? %>
+  <table id="projects_table">
+    <th></th>
+    <th>Nazwa_projektu:</th>
+    <th>Srednia ocena:</th>
+    <th>Ilosc komentarzy:</th>
+
+    <%= render(:partial => @projects) %>
+
+  </table>
+  <%= will_paginate @products %>
+
+<% else %>
+  <p>Nie znaleziono zadnych projektow.</p>
+<% end %>
+

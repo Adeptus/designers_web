@@ -4,6 +4,11 @@ class Project < ActiveRecord::Base
   has_many   :ratings
   has_many   :raters, :through => :ratings, :source => :designers
 
+  def self.search(search, page, order = 'text')
+    paginate :per_page => 5, :page => page,
+             :conditions => ['text like ?', "%#{search}%"],
+             :order => 'text'
+  end
 
   def average_rating
       value = self.ratings.inject(0) do |value, rating|

@@ -2,7 +2,7 @@ class ProjectsController < ApplicationController
   before_filter :authorization, :except => [:index, :show, :login, :set_news]
 
   def index
-    @projects = Project.find(:all)
+    @projects = Project.search(params[:search], params[:page], params[:order])
   end
 
   def new

@@ -27,9 +27,36 @@
   float: center;
 }
 
-#designers table tr td {
+#designers tr td {
   padding: 15px;
   vertical-align: top;
+}
+
+#projects_table {
+  margin: 1em;
+}
+
+#projects_table tr td {
+  border: solid black;
+}
+
+.project_image {
+  width: 15em;
+  height: 10em;
+}
+
+.project_text {
+  width: 22em;
+}
+
+.project_comments,
+.project_rating {
+  width: 5em;
+}
+
+.project_miniature {
+  width: 12em;
+  float: center;
 }
 
 .form legend {
