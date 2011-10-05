@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UserStoriesTest < ActionController::IntegrationTest
+class DesignerStoriesTest < ActionController::IntegrationTest
   fixtures :all
 
   def test_create_designer_login_add_portfolio_add_project_logout
@@ -8,15 +8,15 @@ class UserStoriesTest < ActionController::IntegrationTest
     Portfolio.delete_all
     Project.delete_all
 
-    get "/designer/index"
+    get "/designers"
     assert_response :success
     assert_template "index"    
 
-    get "/designer/new"
+    get "/designers/new"
     assert_response :success
     assert_template "new"
 
-    post_via_redirect "/designer/create",
+    post_via_redirect "/designers/create",
                       :designer => { :name         => "Lolek",
                                      :password     => "111",
                                      :tel          => 222,
@@ -31,21 +31,21 @@ class UserStoriesTest < ActionController::IntegrationTest
     post "/login", :name => "Lolek", :password => "111"
     assert_response :redirect
 
-    get "/portfolio/new"
+    get "/portfolios/new"
     assert_response :success
     assert_template "new"
 
     assert_equal 3, session[:user_id]
 
-    post "/portfolio/create", :portfolio => "Lolek portfolio"
+    post "/portfolios/create", :portfolio => "Lolek portfolio"
     assert_response :redirect
     assert_equal 1, Portfolio.find(:all).count
     assert_equal "Lolek portfolio", Portfolio.find(:all).first.text 
 
-    get "/project/new"
+    get "/projects/new"
     assert_response :success
 
-    post "/project/create", :project => {:text => "JEST"}
+    post "/projects/create", :project => {:text => "JEST"}
     assert_response :redirect
     assert_equal 1, Portfolio.find(:all).first.projects.count
 

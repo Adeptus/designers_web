@@ -1,22 +1,20 @@
 class CommentsController < ApplicationController
-  before_filter :authorization
+#  before_filter :authorization
 
   def create
-    @comment = Comment.create!(:text            => params[:add_comment][:text],
-                               :designer_id     => session[:user_id],
-                               :attachable_id   => params[:add_comment][:attachable_id],
-                               :attachable_type => params[:add_comment][:attachable_type],)
+    @comment = Comment.new(params[:add_comment])
+
+    @comment.save
     respond_to do |format|
-      format.html { redirect_to :back }
+      format.html { redirect_to request.referer ? :back : "/projects" }
       format.js
     end
   end
 
-
   def destroy
     @comment = Comment.find(params[:id]).destroy
     respond_to do |format|
-      format.html { redirect_to :back }
+      format.html { redirect_to request.referer ? :back : "/projects" }
       format.js
     end
   end

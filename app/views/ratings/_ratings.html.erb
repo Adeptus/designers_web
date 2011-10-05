@@ -17,5 +17,6 @@
     <%= radio_button_tag("rating[value]", 5, current_designer_rating == 5, :class => 'rating_button') %>
 
     <%= hidden_field_tag("project_id", @project.id) %>
+    <%= hidden_field_tag("designer_id", session[:user_id]) %>
   <%= f.submit "Submit" %>
 <% end %>

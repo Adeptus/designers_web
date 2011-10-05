@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
       end
 
       respond_to do |format|
-        format.html { redirect_to :back }
+        format.html { redirect_to request.referer ? :back : "/designer" }
         format.js {render "helpers/set_news" }
       end
     end

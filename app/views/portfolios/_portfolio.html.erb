@@ -3,9 +3,7 @@
 <%= portfolio.designer.presentation %>
      
 <% if portfolio.designer.id == session[:user_id] %>
-  <%= link_to "delete designer", :controller => "designer",
-                                 :action => 'destroy',
-                                 :id => portfolio.designer.id %>
+  <%= link_to "delete designer", designer_path(portfolio.designer), :method => :delete %>
 <% end %>
 
 <br>

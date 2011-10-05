@@ -3,15 +3,14 @@ class RatingsController < ApplicationController
   after_filter  :update_designer_score
 
   def create
-    @rating = Rating.new(params[:rating])
-    @rating.project_id = @project.id
-    @rating.designer_id = session[:user_id]
+    @rating = Rating.new()
+    @rating.value       = params[:rating]    
+    @rating.project_id  = @project.id
+    @rating.designer_id = params[:designer_id]
     @rating.save
 
     respond_to do |format|
-      format.html { redirect_to :controller => "project", 
-                                :action => "show", 
-                                :id => @project.id }
+      format.html { redirect_to project_path(@project.id) }
       format.js
     end
   end
@@ -21,9 +20,7 @@ class RatingsController < ApplicationController
     @rating.update_attributes(params[:rating])
 
     respond_to do |format|
-      format.html { redirect_to :controller => "project", 
-                                :action => "show", 
-                                :id => @project.id }
+      format.html { redirect_to project_path(@project.id) }
       format.js
     end
   end

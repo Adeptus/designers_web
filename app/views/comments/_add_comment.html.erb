@@ -3,8 +3,9 @@
   </p><label for="add_comment">Add comment</label>
 
    <%= f.text_field   :text %>
-   <%= f.hidden_field :attachable_id, :value => id %>
+   <%= f.hidden_field :attachable_id,   :value => id %>
    <%= f.hidden_field :attachable_type, :value => type %>
+   <%= f.hidden_field :designer_id,     :value => session[:user_id] %>
 
   <%= submit_tag "Comment" %></p>
 <% end %>
