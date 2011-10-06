@@ -7,7 +7,7 @@
   </b></p>
 
 
-    <% if session[:user_id] %>
+    <% if session[:user_id] and session[:user_id] != @project.portfolio.designer_id%>
       <div id="ratings_form">
         <%= render(:partial => "/ratings/ratings",
                    :object => @project) %>

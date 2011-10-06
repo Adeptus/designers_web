@@ -16,8 +16,8 @@ class RatingsController < ApplicationController
   end
 
   def update
-    @rating = Designer.find(session[:user_id]).ratings.find_by_project_id(@project.id)
-    @rating.update_attributes(params[:rating])
+    @rating = Designer.find(params[:designer_id]).ratings.find_by_project_id(@project.id)
+    @rating.update_attributes(:value => params[:rating])
 
     respond_to do |format|
       format.html { redirect_to project_path(@project.id) }

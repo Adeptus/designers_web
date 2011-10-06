@@ -11,7 +11,7 @@ class ProjectTest < ActiveSupport::TestCase
   end
 
   def test_average_rating
-    assert_equal 3.0, Project.find(:first).average_rating
+    assert_equal 4.0, Project.find(:first).average_rating
   end
 
 end

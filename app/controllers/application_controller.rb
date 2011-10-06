@@ -12,10 +12,10 @@ class ApplicationController < ActionController::Base
       if user
         session[:user_id] = user.id
         flash[:notice] = "Hello #{user.name}"
-        redirect_to request.referer ? :back : "/designer"
+        redirect_to request.referer ? :back : "/designers"
       else
         flash[:notice] = "Bad password/user"
-        redirect_to request.referer ? :back : "/designer"
+        redirect_to request.referer ? :back : "/designers"
       end
     end
   end
@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
       end
 
       respond_to do |format|
-        format.html { redirect_to request.referer ? :back : "/designer" }
+        format.html { redirect_to request.referer ? :back : "/designers" }
         format.js {render "helpers/set_news" }
       end
     end

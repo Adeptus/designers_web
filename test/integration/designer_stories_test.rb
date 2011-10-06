@@ -3,7 +3,7 @@ require 'test_helper'
 class DesignerStoriesTest < ActionController::IntegrationTest
   fixtures :all
 
-  def test_create_designer_login_add_portfolio_add_project_logout
+  def test_create_designer_login_add_portfolio_add_project_and_logout
     Designer.delete_all
     Portfolio.delete_all
     Project.delete_all
@@ -52,6 +52,50 @@ class DesignerStoriesTest < ActionController::IntegrationTest
     post "/logout"
     assert_response :redirect
     assert_nil session[:user_id]
+  end
+
+  def test_designer_vote_project_and_next_update_vote_story
+    @designer = Designer.find(designers(:aaa))
+  
+    post_via_redirect "/login", :name => @designer.name, :password => @designer.password
+    assert_equal '/designers', path
+    assert_equal 'Hello Czarnuch', flash[:notice] 
+
+    get "projects/3"
+    assert_response :success
+    assert_template "show"
+    assert_equal [], @designer.ratings
+
+    post_via_redirect "ratings/create", {:rating => 2,
+                                         :project_id => 3,
+                                         :designer_id => @designer.id}
+    assert_response :success
+    assert_template "show"
+    assert_equal 2, @designer.ratings.find(:first, :conditions => {
+                                                   :project_id => 3}).value
+
+    post_via_redirect "ratings/update", {:rating => 1,
+                                         :project_id => 3,
+                                         :designer_id => @designer.id}
+
+    assert_equal 1, @designer.ratings.find(:first, :conditions => {
+                                                   :project_id => 3}).value
+  end
+
+  def test_guest_search_project
+
+    get "projects"
+    assert_response :success
+    assert_template "index"
+    assert assigns(:projects)
+
+    assert_equal 3, assigns(:projects).count
+
+    get "projects?search=Kowals"
+    assert_response :success
+    assert_template "index"
+
+    assert_equal 1, assigns(:projects).count
   end
 
 end

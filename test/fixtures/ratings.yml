@@ -1,16 +1,12 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  designer_id: 1
-  project_id: 1
-  value: 2
+  designer_id: 2
+  project_id: 2
+  value: 3
 
 two:
   designer_id: 2
   project_id: 1
   value: 4
 
-three:
-  designer_id: 2
-  project_id: 1
-  value: 3
