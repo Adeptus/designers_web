@@ -149,17 +149,17 @@
   border: 1px solid black;
 }
 
-#designers_table th .current {
+.current {
   padding-right: 12px;
   background-repeat: no-repeat;
   background-position: right;
 }
 
-#designers_table th .asc {
+.asc {
   background-image: url(/images/up_arrow.gif);
 }
 
-#designers_table th .desc {
+.desc {
   background-image: url(/images/down_arrow.gif);
 }
 

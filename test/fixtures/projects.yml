@@ -6,6 +6,7 @@ one:
   text: Editor Vim
   link: http://www.vim.org/
   image_url: /images/vim.jpg
+  score: 4.0
 
 two:
   id: 2
@@ -13,6 +14,7 @@ two:
   text: Kowalstwo Artystyczne
   link: http://www.kowal.pl/
   image_url: /images/kowal.jpg
+  score: 3.0
 
 three:
   id: 3

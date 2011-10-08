@@ -14,6 +14,12 @@ class RatingsControllerTest < ActionController::TestCase
     assert_not_equal 1.2, designers(:aaa).score #was 1.2 before add 4(look fixtures)
   end
 
+  def test_update_project_score
+    assert_difference('Project.find(1).score', -1) do
+      post :update, {:project_id => 1, :rating => 3, :designer_id => 2}
+    end
+  end
+
   def test_helper_function_current_designer_rating
   end
 

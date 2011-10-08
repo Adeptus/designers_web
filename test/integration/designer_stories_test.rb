@@ -96,6 +96,24 @@ class DesignerStoriesTest < ActionController::IntegrationTest
     assert_template "index"
 
     assert_equal 1, assigns(:projects).count
+    assert_match /Kowals/, assigns(:projects).first.text
   end
 
+  def test_guest_sort_projects
+
+    get "projects"
+    assert_response :success
+    assert_template "index"
+    assert assigns(:projects)
+
+    assert_match /Editor/ , assigns(:projects).first.text
+    assert_equal 4.0 , assigns(:projects).first.score
+
+    get "projects?order=score&direction=asc"
+    assert_response :success
+    assert_template "index"
+
+    assert_match /MyString/ , assigns(:projects).first.text
+    assert_nil assigns(:projects).first.score
+  end
 end

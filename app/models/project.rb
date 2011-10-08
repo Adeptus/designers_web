@@ -4,10 +4,14 @@ class Project < ActiveRecord::Base
   has_many   :ratings
   has_many   :raters, :through => :ratings, :source => :designers
 
-  def self.search(search, page, order = 'text')
+  def self.search(search, page, order, direction)
     paginate :per_page => 5, :page => page,
              :conditions => ['text like ?', "%#{search}%"],
-             :order => 'text'
+             :order => order + " " + direction
+  end
+
+  def update_score
+    self.update_attributes(:score => average_rating)
   end
 
   def average_rating

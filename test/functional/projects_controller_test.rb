@@ -15,5 +15,4 @@ class ProjectsControllerTest < ActionController::TestCase
     assert_response :success
     assert_select "div#ratings_form", 1
   end
-
 end

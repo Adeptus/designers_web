@@ -7,7 +7,13 @@
     <%= link_to project.text, project_path(project) %>
   </td>
 
-  <td class="project_rating">  <%= project.average_rating %></td>
+  <td class="project_rating">
+    <% if project.score.nil? %>
+      No rating
+    <% else %>
+      <%= project.score %>
+    <% end %>
+  </td>
 
   <td class="project_comments"><%= project.comments.count %></td>
 </tr>

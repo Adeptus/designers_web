@@ -1,13 +1,15 @@
 <% form_tag projects_path, :method => 'get' do %>
   <%= text_field_tag :search, params[:search] %>
+  <%= hidden_field_tag :direction, params[:direction] %>
+  <%= hidden_field_tag :order, params[:order] %>
   <%= submit_tag "Search project", :name => nil %>
 <% end %>
 
 <% unless @projects.empty? %>
   <table id="projects_table">
     <th></th>
-    <th>Nazwa_projektu:</th>
-    <th>Srednia ocena:</th>
+    <th><%= project_sortable "text", "Project name" %></th>
+    <th><%= project_sortable "score", "Rating" %></th>
     <th>Ilosc komentarzy:</th>
 
     <%= render(:partial => @projects) %>
@@ -16,6 +18,6 @@
   <%= will_paginate @products %>
 
 <% else %>
-  <p>Nie znaleziono zadnych projektow.</p>
+  <p>Didn't found any projects.</p>
 <% end %>
 
