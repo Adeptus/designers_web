@@ -66,17 +66,15 @@ class DesignerStoriesTest < ActionController::IntegrationTest
     assert_template "show"
     assert_equal [], @designer.ratings
 
-    post_via_redirect "ratings/create", {:rating => 2,
-                                         :project_id => 3,
-                                         :designer_id => @designer.id}
+    post_via_redirect "ratings/create", {:value => 2,
+                                         :project_id => 3}
     assert_response :success
     assert_template "show"
     assert_equal 2, @designer.ratings.find(:first, :conditions => {
                                                    :project_id => 3}).value
 
-    post_via_redirect "ratings/update", {:rating => 1,
-                                         :project_id => 3,
-                                         :designer_id => @designer.id}
+    post_via_redirect "ratings/update", {:value => 1,
+                                         :project_id => 3}
 
     assert_equal 1, @designer.ratings.find(:first, :conditions => {
                                                    :project_id => 3}).value

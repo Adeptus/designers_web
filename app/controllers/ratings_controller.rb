@@ -4,9 +4,9 @@ class RatingsController < ApplicationController
 
   def create
     @rating = Rating.new()
-    @rating.value       = params[:rating]    
+    @rating.value       = params[:value]
     @rating.project_id  = @project.id
-    @rating.designer_id = params[:designer_id]
+    @rating.designer_id = session[:user_id]
     @rating.save
 
     respond_to do |format|
@@ -16,8 +16,8 @@ class RatingsController < ApplicationController
   end
 
   def update
-    @rating = Designer.find(params[:designer_id]).ratings.find_by_project_id(@project.id)
-    @rating.update_attributes(:value => params[:rating])
+    @rating = Designer.find(session[:user_id]).ratings.find_by_project_id(@project.id)
+    @rating.update_attributes(:value => params[:value])
 
     respond_to do |format|
       format.html { redirect_to project_path(@project.id) }

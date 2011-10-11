@@ -1,0 +1,85 @@
+.rating {
+    background: url("/images/stars.gif") no-repeat scroll 0 0 transparent;
+    clear: both;
+    height: 16px;
+    list-style: none outside none;
+    margin: 0 45% 20px;
+    padding: 0;
+    position: relative;
+    width: 80px;
+}
+.stars0 {
+    background-position: 0 0;
+}
+.stars1 {
+    background-position: 0 -16px;
+}
+.stars2 {
+    background-position: 0 -32px;
+}
+.stars3 {
+    background-position: 0 -48px;
+}
+.stars4 {
+    background-position: 0 -64px;
+}
+.stars5 {
+    background-position: 0 -80px;
+}
+ul.rating li {
+    cursor: pointer;
+    float: left;
+    text-indent: -999em;
+}
+ul.rating li a {
+    height: 16px;
+    left: 0;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    width: 16px;
+    z-index: 200;
+}
+ul.rating li.one a {
+    left: 0;
+}
+ul.rating li.two a {
+    left: 16px;
+}
+ul.rating li.three a {
+    left: 32px;
+}
+ul.rating li.four a {
+    left: 48px;
+}
+ul.rating li.five a {
+    left: 64px;
+}
+ul.rating li a:hover {
+    background: url("/images/stars.gif") no-repeat scroll 0 0 transparent;
+    height: 16px;
+    left: 0;
+    overflow: hidden;
+    width: 80px;
+    z-index: 2;
+}
+ul.rating li.one a:hover {
+    background-position: 0 -96px;
+}
+ul.rating li.two a:hover {
+    background-position: 0 -112px;
+}
+ul.rating li.three a:hover {
+    background-position: 0 -128px;
+}
+ul.rating li.four a:hover {
+    background-position: 0 -144px;
+}
+ul.rating li.five a:hover {
+    background-position: 0 -160px;
+}
+h3 {
+    font-size: 110%;
+    margin: 0 0 2px;
+}
+
